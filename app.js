@@ -11,11 +11,6 @@ const app = express();
 app.use(express.static(publicPath));
 const upload = multer({ dest: uploadPath });
 
-// app.use(express.static("app.js"))
-// app.all("/", function(req, res) {
-//     req.render("getPug.pug")
-// })
-
 app.set("view engine", "pug");
 
 const uploadedFiles = [];
